@@ -4,12 +4,12 @@
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "DM Serif Text", serif;
 }
 
 header {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -23,7 +23,6 @@ a.mainlogo {
 .mainlogo img {
     margin: auto;
     margin-right: 20px;
-    margin-left: 20px;
     height: 70px;
     transform: scale(1);
     transition: transform 0.3s ease-out;
@@ -35,6 +34,12 @@ a.mainlogo {
     transition: transform 0.3s ease-out;
 }
 
+nav ul{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
 nav ul li {
     display: inline-flex;
     align-content: center;
@@ -44,50 +49,34 @@ nav ul li {
 .btn {
     display: inline-block;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     background-color: #fff;
     color: #000;
     border-radius: 15px;
-    width: 175px;
+    width: 100px;
     text-align: center;
-    font-family: 'Bruno Ace SC', cursive;
+    font-family: "DM Serif Text", serif;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 16px;
     transition-property: background-color, border-radius;
     transition-duration: 0.3s, 0.3s;
     transition-timing-function: ease-out, ease-out;
 }
 
-@media (max-width: 767px) {
-    .btn {
-        font-size: 18px;
-        width: 90px;
-        margin: 5px;
+    .btn:hover {
+        background-color: #2462AB;
+        color: #fff;
+        border-radius: 5px;
     }
-}
-
-@media (max-width: 395px) {
-    .btn {
-        width: 50vw;
-    }
-}
-
-.btn:hover {
-    background-color: #943DFF;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: underline;
-}
 
 body {
-    color: #fff;
-    background-image: url("assets/page/stripes2.png");
-    background-size: 300%%;
-    background-repeat: repeat;
+    color: #000;
+    background-color: #808080;
 }
 
 main {
     width: 100%;
+
 }
 
 section {
@@ -103,23 +92,19 @@ section {
     font-size: 18px;
 }
 
-    section h2 {
+section h2 {
         font-size: 18px;
-    }
-
+}
 
 .return {
-    width: 220px;
     margin: 30px;
     padding: 10px;
     display: flex;
     justify-content: center;
     background-color: #000;
-    border-radius: 15px;
     transition-property: background-color;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
-    border: 3px solid black;
 }
 
     .return:hover {
@@ -129,13 +114,12 @@ section {
     }
 
 .returnbtn {
+    width: auto;
     color: #fff;
-    font-family: 'Bruno Ace SC', cursive;
+    font-family: "DM Serif Text", serif;
     text-decoration: none;
     font-size: 24px;
 }
-
-
 
 footer {
     padding: 10px;
