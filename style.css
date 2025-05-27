@@ -44,11 +44,11 @@ nav ul li {
 .btn {
     display: inline-block;
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
     background-color: #fff;
     color: #000;
     border-radius: 15px;
-    width: 130px;
+    width: 175px;
     text-align: center;
     font-family: 'Bruno Ace SC', cursive;
     text-decoration: none;
@@ -110,8 +110,7 @@ section {
 
 .return {
     width: 220px;
-    margin: auto;
-    margin-bottom: 30px;
+    margin: 30px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -124,7 +123,7 @@ section {
 }
 
     .return:hover {
-        background-color: #943DFF;
+        background-color: #2261AE;
         color: #fff;
         text-decoration: underline;
     }
