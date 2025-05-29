@@ -53,20 +53,21 @@ nav ul li {
     background-color: #fff;
     color: #000;
     border-radius: 15px;
-    width: 100px;
+    min-width: 100px;
     text-align: center;
     font-family: "DM Serif Text", serif;
     text-decoration: none;
     font-size: 16px;
-    transition-property: background-color, border-radius;
-    transition-duration: 0.3s, 0.3s;
-    transition-timing-function: ease-out, ease-out;
+    transition-property: background-color, border-radius, font-size;
+    transition-duration: 0.3s, 0.3s, 0.3s;
+    transition-timing-function: ease-out, ease-out, ease-out;
 }
 
     .btn:hover {
         background-color: #2462AB;
         color: #fff;
         border-radius: 5px;
+        font-size: 20px;
     }
 
 body {
@@ -75,50 +76,14 @@ body {
 }
 
 main {
-    width: 100%;
-
-}
-
-section {
     display: flex;
-    justify-content: space-between;
-    background-color: #000;
-    color: #fff;
-    border-radius: 40px;
-    padding: 40px 50px 50px 50px;
-    margin: 30px;
     flex-direction: column;
-    align-items: left;
-    font-size: 18px;
+    align-items: center;
+    text-align: center;
 }
 
-section h2 {
-        font-size: 18px;
-}
-
-.return {
-    margin: 30px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    background-color: #000;
-    transition-property: background-color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-
-    .return:hover {
-        background-color: #2261AE;
-        color: #fff;
-        text-decoration: underline;
-    }
-
-.returnbtn {
-    width: auto;
-    color: #fff;
-    font-family: "DM Serif Text", serif;
-    text-decoration: none;
-    font-size: 24px;
+div.splash {
+    padding: 20px;
 }
 
 footer {
@@ -126,6 +91,6 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 14px;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
