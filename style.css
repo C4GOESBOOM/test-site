@@ -72,7 +72,7 @@ nav ul li {
 
 body {
     color: #000;
-    background-color: #808080;
+    background-color: #c3c3c3;
 }
 
 main {
@@ -80,10 +80,17 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 24px;
+}
+
+main h1 {
+    font-size: 56px;
+    margin: 24px;
 }
 
 div.splash {
-    padding: 20px;
+    padding: 50px;
+    filter: drop-shadow(#4f4f4f 5px 5px 10px);
 }
 
 footer {
