@@ -13,6 +13,7 @@ header {
     display: flex;
     justify-content: center;
     padding: 10px;
+    padding-bottom: 20px;
 }
 
 a.mainlogo {
@@ -22,16 +23,14 @@ a.mainlogo {
 
 .mainlogo img {
     margin: auto;
-    margin-right: 20px;
-    height: 70px;
-    transform: scale(1);
-    transition: transform 0.3s ease-out;
+    height: 60px;
+    transition: height 0.3s ease-out;
 }
 
 
 .mainlogo img:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease-out;
+    height: 70px;
+    transition:height 0.3s ease-out;
 }
 
 nav ul{
@@ -49,15 +48,17 @@ nav ul li {
 .btn {
     display: inline-block;
     margin: 10px;
+    margin-top: 25px;
     padding: 10px;
     background-color: #fff;
     color: #000;
     border-radius: 15px;
-    min-width: 100px;
+    min-width: 80px;
     text-align: center;
     font-family: "DM Serif Text", serif;
+    font-style: italic;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     transition-property: background-color, border-radius, font-size;
     transition-duration: 0.3s, 0.3s, 0.3s;
     transition-timing-function: ease-out, ease-out, ease-out;
@@ -67,7 +68,7 @@ nav ul li {
         background-color: #2462AB;
         color: #fff;
         border-radius: 5px;
-        font-size: 20px;
+        font-size: 22px;
     }
 
 body {
@@ -102,9 +103,21 @@ div.splash {
 div.content {
     margin: 24px;
     padding: 50px;
+    padding-top: 20px;
     background-color: #fff;
     width: 700px;
+    min-height: 400px;
     filter: drop-shadow(#4f4f4fa0 5px 5px 10px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#homepage-1 {
+    background-image:
+        linear-gradient(to top, rgba(255, 255, 255, 0) 25%, white 75%) ,
+        url('assets/examples/Dodgeville 2.jpg');
+    
 }
 
 footer {
