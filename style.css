@@ -120,6 +120,90 @@ div.content {
     
 }
 
+
+.content-slider {
+    position: relative; /* Crucial for positioning the slides */
+    width: 600px; /* Set a fixed width for your slider */
+    height: 400px; /* Set a fixed height for your slider */
+    overflow: hidden; /* Hide anything that goes outside the slider boundaries */
+    cursor: pointer; /* Indicate it's interactive */
+}
+
+.slide1, .slide2 {
+    position: absolute; /* Position slides on top of each other or side-by-side */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for sliding */
+    /* backdrop-filter: brightness(0.8); /* Optional: Slightly dim initial image */
+}
+
+.content-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images fill the slide without distortion */
+    display: block; /* Remove extra space below images */
+}
+
+/* Initially hide the second slide by moving it off to the right */
+.slide2 {
+    transform: translateX(100%); /* Start 100% to the right of its normal position */
+    z-index: 1; /* Ensure slide2 is above slide1 if needed for subtle overlaps */
+}
+
+/* Position the first slide correctly */
+.slide1 {
+    transform: translateX(0); /* Start at its normal position */
+    z-index: 2; /* Ensure slide1 is initially on top */
+}
+
+
+/* --- HOVER EFFECT --- */
+.content-slider:hover .slide1 {
+    transform: translateX(-100%); /* Slide the first image 100% to the left */
+}
+
+.content-slider:hover .slide2 {
+    transform: translateX(0); /* Bring the second image back to its normal position */
+}
+
+/* Optional: Add a subtle text overlay or indicator */
+.content-slider::before {
+    content: "Before";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 10; /* Ensure it's above the images */
+    transition: opacity 0.3s ease;
+}
+
+.content-slider::after {
+    content: "After";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 10;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+.content-slider:hover::before {
+    opacity: 0; /* Hide 'Before' on hover */
+}
+
+.content-slider:hover::after {
+    opacity: 1; /* Show 'After' on hover */
+}
+
 footer {
     padding: 10px;
     display: flex;
